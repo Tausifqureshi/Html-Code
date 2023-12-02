@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gird Property</title>
+   <style>
+   .container{
+    /* grid Container Property */
+    background-color: yellowgreen;
+    height: 56vh;
+    display: grid;
+    /* grid-row-gap: 9px ;              row me gap ata hai is */
+    /* grid-column-gap: 130px; */         /* columus ke bich gap me work*/
+    grid-template-columns:auto auto auto auto ;    /* jitne bar auto utne columns mile ge ye width leta hai pixle me dege to   utni size ke box aye ge */            /**/
+     /* grid-template-rows: ; 24px 40px*/            /**/
+     /* justify-content: ; center*/               /**/
+     /* align-items: ; center*/                     /**/
+      grid-gap:20px 30px ;   /*ye short hand property columns gap and row gap ki */
+
+                                     
+
+
+   }
+
+
+   .item{
+    /* grid item Property */
+    background-color: gray;
+    border: 1px solid red;
+    /* text-align: center; */
+    /* grid-column: 1 / 3;  */
+    /* grid-row: ; */
+
+   }
+
+   .item1{
+            /* Grid item property */
+
+
+    /* grid-column: 1 / 3; */
+     grid-row: 1 / 3;
+}
+    
+   </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        
+    </div>
+    
+
+</body>
+</html>

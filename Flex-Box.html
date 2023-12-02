@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox </title>
+    <style>
+        .container {
+            background-color: DodgerBlue;
+            /* width: 80vw; */
+
+            /* Flex Container property*/
+            display: flex;
+
+            /* flex-direction: column; */
+            /*kis dircetion ent center start se*/
+
+            flex-wrap: wrap;
+            /* phone me responsive ke liye use hoti hai ye property    */
+
+            /* flex-flow: row-reverse; */
+            /* is me two property use hoti hai   */
+
+            /* justify-content: center; */
+            /*     */
+
+            /* align-items:center; */
+            /*              */
+
+            /* align-content: space-between; */
+            /**/
+
+
+        }
+
+
+
+        .container div {
+            background-color: gray;
+            color: black;
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+            line-height: 50px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            border: 1px solid wheat;
+
+            /* Flex item property*/
+
+            /* order: ; */
+            /*jis ka order jayda o baad me ata hai*/
+
+            /* flex-grow: ; */
+            /*kisi item ki width badne ke liye use   */
+
+            /* flex-shrink: inherit; */
+            /*  */
+
+            /* flex-basis: content; */
+            /* */
+
+            /* flex: content; */
+            /* */
+
+            /* align-self: center; */
+            /*apne parant se bher work kare ga khud ki property lega  */
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+
+    </div>
+
+</body>
+
+</html>

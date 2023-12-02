@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Transitions</title>
+    <style>
+          div{
+            height: 100px;
+            width: 100px;
+            background-color:red;
+            border: 1px solid black;
+            color: white;
+            margin:50px auto;
+            text-align: center;
+            transition: 2s 1s ease;
+            
+            /* sort hand property first 2s wali transition-duration dusri transition-delay or three transition-timing-function*/
+          }
+
+        div {
+            /* transition: all; */
+            /* sort hand property hai ye */
+
+
+            /* transition-property: none; */
+
+            /* transition-delay: 2s; */
+            /*kitne dear baad start hona  */
+
+            transition-duration: 1.5s;
+            /*kitne dear ke liye hona*/
+
+
+            /* transition-timing-function: ease-in; */
+            /*kaise run karan slow ya fast */
+
+
+        }
+
+        div:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(190deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS Transitions Property
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+-->
+
+<div>Lorem ipsum,.</div>
+
+
+</body>
+
+</html>
