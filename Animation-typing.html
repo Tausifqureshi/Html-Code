@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animation-typing.css">
+    <title>Animation-Typing</title>
+</head>
+<body>
+
+    <!-- <h1 id="heading">Animation-Typing</h1> -->
+    <div class="container">
+        <span class="text first-text">I m a</span>
+        <span class="text second-text"></span>
+
+    </div>
+    <script>
+       const text = document.querySelector(".second-text");
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = 'Front-End Developer';
+    }, 0);
+
+    setTimeout(() => {
+        text.textContent = 'Full-Stack Developer';
+    }, 4000); // This will happen 4 seconds after the page load
+
+    setTimeout(() => {
+        text.textContent = 'Web-Developer';
+    }, 8000); // This should happen 8 seconds after the page load to allow 'Full-Stack Developer' to show
+}
+
+textLoad();
+
+setInterval(textLoad,12000)
+
+    </script>
+</body>
+</html>
