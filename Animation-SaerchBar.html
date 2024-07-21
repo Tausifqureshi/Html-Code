@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animated Search Bar</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+    border-color: #007bff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="search-bar" placeholder="Search...">
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const searchBar = document.querySelector(".search-bar");
+
+const textLoad = () => {
+    setTimeout(() => {
+        searchBar.placeholder = 'Front-End Developer';
+    }, 0);
+
+    setTimeout(() => {
+        searchBar.placeholder = 'Full-Stack Developer';
+    }, 4000); // Change after 4 seconds
+
+    setTimeout(() => {
+        searchBar.placeholder = 'Web-Developer';
+    }, 8000); // Change after 8 seconds
+}
+
+textLoad();
+setInterval(textLoad, 12000); // Repeat every 12 seconds
+
+    </script>
+</body>
+</html>
